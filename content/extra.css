@@ -1,0 +1,42 @@
+/* b612-regular - latin */
+@font-face {
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/b612-v12-latin-regular.woff2') format('woff2');
+}
+
+/* b612-italic - latin */
+@font-face {
+  font-family: 'B612';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/b612-v12-latin-italic.woff2') format('woff2');
+}
+
+/* b612-700 - latin */
+@font-face {
+  font-family: 'B612';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/b612-v12-latin-700.woff2') format('woff2');
+}
+
+/* b612-700italic - latin */
+@font-face {
+  font-family: 'B612';
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/b612-v12-latin-700italic.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  font-family: 'B612', sans-serif;
+}
+
+.w-screen { max-width: 100%; }
