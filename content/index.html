@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Der neue Polizeipanzer! &mdash; polizeipanzer.info</title>
+    <title>polizeipanzer.info</title>
 
     <meta name="title" content="polizeipanzer.info">
     <meta name="description" content="Alles, was ihr &uuml;ber die neuen Panzer der Polizei wissen m&uuml;sst.">
@@ -61,7 +61,11 @@
           <b>Hintergr&uuml;nde zu dem Fahrzeug</b> und den Themenfeldern Innere
         Sicherheit, Geheimnisschutz sowie den kommenden Waffenstationen. So
         mehren sich Ger&uuml;chte, dass es ein bestimmtes Produkt wird. </li>
-        </p>
+        <li>
+          <a href="#klage" class="text-blue-600 underline">Der dritte
+            Teil</a> erklärt den Unterschied zwischen Revolution und
+          Reformation. Warum Quellenschutz sehr anstrengend sein kann, Gesetze
+          cool sein können. <b>Und warum Geld scheiße ist.</b></li>
         <p class="mx-auto mt-6 max-w-2xl text-gray-900">
         Der Autor dieser Seite, <a href="https://lnrt.de"
           class="text-blue-600 underline"><b>Lennart M&uuml;hlenmeier</b></a>,
@@ -71,15 +75,10 @@
         href="mailto:lennart@polizeipanzer.info" class="text-blue-600 underline">via
       Mail</a>. </p>
       <p class="text-gray-600 text-center mt-6 mb-6">Letzte Aktualisierung am 24. April 2024</p>
-      <p class="text-center text-4xl pb-5"> &#128659; &#128561;</p>
       </div>
     </div>
 
-    <div class="py-8 bg-zinc-900">
-      <div>
-        <h2 class="text-xl font-bold tracking-tight text-center text-white uppercase"><a href="#werbung" name="werbung" class="text-gray-500 font-normal">#</a> Erster Teil</h2>
-      </div>
-    </div>
+    <a href="#werbung" name="werbung" class="text-gray-500 font-normal"></a>
 
     <div class="bg-black text-white bg-gradient-to-r from-black via-blue-900 h-92">
       <div class="sm:h-92 pt-20 px-6 lg:px-10 pb-20 text-center w-screen bg-cover" style="background: url('resources/images/survivor-r.webp') no-repeat left top;">
@@ -108,8 +107,10 @@
         </div>
       </div>
     </div>
-    
-    <model-viewer src="resources/survivor.glb" auto-rotate camera-controls class="mx-auto w-full" style="height:600px"></model-viewer>
+
+    <div id="model" class="invisible h-auto py-10">
+      <model-viewer src="resources/survivor.glb" auto-rotate camera-controls class="mx-auto" style="height:300px;width:500px"></model-viewer>
+    </div>
 
     <div class="overflow-hidden bg-white max-w-4xl p-4 m-auto">
       <p class="text-lg font-medium leading-6 text-gray-900">Technische Ausstattung</p>
@@ -178,7 +179,7 @@
           </div>
         </dl>
         <div class="px-4 py-1">
-          <p class="mt-1 text-m text-gray-500 text-right text-xs">Herstellerangaben von <a class="underline decoration-dotted" href="https://www.rheinmetall-defence.com/de/rheinmetall_defence/systems_and_products/vehicle_systems/armoured_wheeled_vehicles/survivor/index.php">Rheinmetall</a></p>
+          <p class="mt-1 text-m text-gray-500 text-right text-xs">Herstellerangaben von <a class="underline decoration-dotted" href="https://www.rheinmetall-defence.com/de/rheinmetall_defence/systems_and_products/vehicle_systems/armoured_wheeled_vehicles/survivor/index.php">Rheinmetall Defence</a></p>
         </div>
 
       </div>
@@ -187,7 +188,7 @@
     <div class="bg-blue-900 bg-gradient-to-t from-black">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 max-w-screen-md m-auto">
         <div class="mx-auto max-w-screen-sm">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white"><a href="#referenzen" name="referenzen" class="text-gray-500 font-normal">#</a> Referenzen</h2>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Referenzen</h2>
           <p class="mb-8 font-light text-white lg:mb-16 sm:text-xl">Unsere Kunden sind zufrieden.</p>
         </div> 
         <div class="grid mb-8 lg:mb-12 lg:grid-cols-2 gap-5">
@@ -202,7 +203,7 @@
               <img class="w-9 h-9 rounded-full" src="resources/images/maiziere.webp" alt="Foto von Thomas de Maizière">
               <div class="space-y-0.5 font-medium text-white text-left">
                 <div class="text-xl">An Thomas de Maizière</div>
-                <div class="text-sm font-light text-gray-500">Damals Ressortchef im Bundesinnenministerium, aus einem Geheimdokument von ~2015, <a href="https://web.archive.org/web/20240412061939/https://www.welt.de/regionales/hamburg/article159496648/Mit-dem-Survivor-wappnet-sich-die-Polizei-gegen-Terroristen.html" class="italic">Quelle</a></div>
+                <div class="text-sm font-light text-gray-500">2015 noch Ressortchef im Bundesinnenministerium, Zitat aus einem Geheimdokument an ihn, <a href="https://web.archive.org/web/20240412061939/https://www.welt.de/regionales/hamburg/article159496648/Mit-dem-Survivor-wappnet-sich-die-Polizei-gegen-Terroristen.html" class="italic">Quelle</a></div>
               </div>
             </figcaption>    
           </figure>
@@ -223,12 +224,6 @@
           </figure>
         </div>
       </div>
-      <div class="float-right bg-white text-black p-10 mb-10 rounded-l-lg">
-        <p class="text-2xl text-right py-1">Was kostet uns das?</p>
-        <p class="text-3xl text-right py-1 font-bold">Mind. 500.000 EUR* **</p>
-        <p class="text-gray-500 text-right">*Pro St&uuml;ck!</p>
-        <p class="text-gray-500 text-right">**zzgl. Betriebs- &amp; Schulungskosten!</p>
-      </div>
     </div>
     <div class="bg-black">
       <img class="object-fill" src="resources/images/g20.webp" alt="Foto der G20-Proteste in Hamburg 2017">
@@ -244,7 +239,7 @@
     <div class="bg-blue-900 bg-gradient-to-b from-black">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 max-w-screen-md m-auto">
         <div class="mx-auto max-w-screen-sm">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white"><a href="#spielzeuge" name="spielzeuge" class="text-gray-500 font-normal">#</a> Spielzeuge</h2>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Spielzeuge</h2>
           <p class="mb-8 font-light text-white lg:mb-16 sm:text-xl">Zur Fr&uuml;hdemokratisierung k&ouml;nnen Sie lustige Spielzeuge kaufen. F&uuml;r Kinder &amp; Erwachsene!</p>
         </div> 
         <div class="grid sm:grid-cols-3 grid-cols-1 gap-4">
@@ -270,13 +265,16 @@
             <div class="mb-3 font-normal text-gray-500">nur 31,49 EUR, f&uuml;r den Hobbykeller</div>
           </div>
         </div>
+        <div class="px-4 py-1">
+          <p class="mt-1 text-m text-white text-right text-xs">Die Produktbilder stammen vom jeweiligen Hersteller.</p>
+    </div>
       </div>
     </div>
 
     <div class="bg-black bg-gradient-to-b from-blue-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 max-w-screen-md m-auto">
         <div class="mx-auto max-w-screen-sm">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white"><a href="#presseberichte" name="presseberichte" class="text-gray-500 font-normal">#</a> Presseberichte</h2>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Presseberichte</h2>
           <p class="mb-8 font-light text-white lg:mb-16 sm:text-xl">Das sagen andere &uuml;ber den neuen Sonderwagen.</p>
         </div> 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -288,7 +286,7 @@
             <div class="mb-2 text-2xl font-bold tracking-tight text-gray-900">»Mit dem Survivor wappnet sich die Polizei gegen Terroristen«</div>
             <div class="mb-3 font-normal text-gray-500">WELT, 2016</div>
           </a>
-          <a class="max-w-m bg-white border border-gray-200 rounded-lg shadow-md p-5" href="https://www.cilip.de/2021/12/11/bundesinnenministerium-kauft-polizeipanzer-survivor-r-von-rheinmetall/" target="_blank">
+          <a class="max-w-m bg-white border border-gray-200 rounded-lg shadow-md p-5 rotate-2" href="https://web.archive.org/web/20240105080912/https://www.cilip.de/2021/12/11/bundesinnenministerium-kauft-polizeipanzer-survivor-r-von-rheinmetall/" target="_blank">
             <div class="mb-2 text-2xl font-bold tracking-tight text-gray-900">»BMI entscheidet sich f&uuml;r Survivor R von Rheinmetall«</div>
             <div class="mb-3 font-normal text-gray-500">CILIP, 2021</div>
           </a>
@@ -301,26 +299,7 @@
       </div>
     </div>
 
-    <div class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-      <div class="mx-auto max-w-7xl py-20 px-6 flex items-center justify-between">
-        <h2 class="text-3xl tracking-tight text-gray-900 sm:text-4xl">
-          <span class="block pb-3 font-bold text-white">W&uuml;rdet ihr den Panzer kaufen?</span>
-        </h2>
-        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-          <div class="inline-flex rounded-md shadow">
-            <a href="#zwei" class="inline-flex items-center justify-center rounded-md border border-transparent bg-gray-800 px-5 py-3 font-bold text-white hover:bg-gray-900 text-3xl">&Uuml;berpr&uuml;ft das Angebot! &#128293;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a name="zwei"></a> 
-    <div class="py-8 bg-zinc-900">
-      <div>
-        <h2 class="text-xl font-bold tracking-tight text-center text-white uppercase"><a href="#hintergrund" name="hintergrund" class="text-gray-500 font-normal">#</a> Zweiter Teil</h2>
-      </div>
-    </div>
-
+    <a href="#hintergrund" name="hintergrund" class="text-gray-500 font-normal"></a>
 
     <div class="py-48 bg-black px-4">
       <div>
@@ -383,32 +362,29 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
 
         <div class="pb-20">
-          <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Wieviele Sonderwagen sollen es denn werden?</p>
+          <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Wieviele ████████████ sollen es denn werden?</p>
           <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-900">
           Insgesamt sollen die L&auml;nder 45 Survivor R erhalten und der Bund
-          nochmal zehn Weitere. Mit Option auf mehr.
-          Einige L&auml;nder preschen vor und kaufen bereits die Sonderwagen des
-          Typs Survivor R von Rheinmetall auf eigene Kosten. So ist bekannt,
-          dass es insgesamt in Berlin, Hamburg, Nordrhein-Westfalen, Sachsen
-          und Brandenburg bereits sechs solche Fahrzeuge gibt.
+          noch einmal zehn Weitere. Mit Option auf mehr.
+          Einige L&auml;nder preschen vor und kaufen bereits die Sonderwagen
+          von Rheinmetall auf eigene Kosten. So ist bekannt, dass es insgesamt
+          in Berlin, Hamburg, Nordrhein-Westfalen, Sachsen
+          und Brandenburg bereits sechs solcher Fahrzeuge gibt.
           </p>
           <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-900">
           Doch es gibt ein großes Problem. Die Bundesregierung und ihre
-          untergeordneten Beh&ouml;rden wie Polizei und Geheimdienste stellen gern
-          auch Nichtigkeiten unter Geheimhaltung. So sollte die Information,
-          welche L&auml;nder wieviele "Begleitfahrzeuge in einer
-          Wasserwerferstaffel" erhalten, die niedrigste Geheimhaltungsstufe
-          haben.
+          untergeordneten Beh&ouml;rden wie Polizei und Beschaffungsamt stellen gern
+          auch Nichtigkeiten unter Geheimhaltung. So hatte die Information,
+          welche L&auml;nder wieviele Sonderwagen 5 erhalten, die niedrigste
+          Geheimhaltungsstufe: "Nur für den Dienstgebrauch".
           </p>
 
           <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-900">
-          Im Rahmen einer Klage nach dem Informationsfreiheitsgesetz gegen das
-          Bundesinnenministerium kam 2021 dann heraus, dass die Information gar
-          nicht vorl&auml;ge, da die Ausschreibung zu dem Zeitpunkt noch nicht
-          beendet war.
-          <a href="https://fragdenstaat.de/blog/2021/02/23/bundesregierung-liegt-keine-informationen-zu-polizeipanzern-vor/"
-            class="text-blue-600 underline">Mehr Details hatte FragdenStaat damals zu
-            berichten</a>. </p>
+          Dies kam im Rahmen einer Klage nach dem Informationsfreiheitsgesetz gegen das
+          Bundesinnenministerium aus 2021 heraus. Die Behörde argumentierte,
+          dass dieser Verteilerschlüssel zu dem Zeitpunkt noch nicht vorlag, da die
+          öffentliche Ausschreibung noch nicht vorbei war. Als Verschlusssache sei genau
+          diese Information dennoch eingestuft.</p>
 
         </div>
       </div>
@@ -428,13 +404,14 @@
             <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Ein "Prestigeobjekt" der Polizei</p>
             <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-900">
             Die neuen Panzerwagen sind f&uuml;r die Polizei auch ein
-            "Prestigeobjekt", sagt Rafael Behr gegen&uuml;ber polizeipanzer.info.
-            Der Professor im Ruhestand lehrte Polizeiwissenschaften am
-            Fachhochschulbereich der Akademie der Polizei. Im Gegensatz zu den
-            Sonderwagen 4, die ein R&auml;umpanzer waren, ist der Survivor R eher
-            ein "Bunker auf R&auml;dern", wie Behr sagt. Weiter: "Das Fahrzeug ist
-            viel zu teuer, um eine Barrikade zu r&auml;umen. Sie behandeln das
-            Fahrzeug wie ein rohes Ei".
+            "Prestigeobjekt", sagt Rafael Behr im Sommer 2023. Er war
+            Professor für Polizeiwissenschaften am Fachhochschulbereich
+            der Akademie der Polizei und ist mittlerweile im Ruhestand.
+            Im Gegensatz zu den Sonderwagen 4, die ein R&auml;umpanzer
+            waren, ist der Survivor R eher ein "Bunker auf R&auml;dern",
+            wie Behr sagt. Weiter: "Das Fahrzeug ist viel zu teuer, um
+            eine Barrikade zu r&auml;umen. Sie behandeln das Fahrzeug
+            wie ein rohes Ei".
             </p>
 
             <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-900">
@@ -461,7 +438,7 @@
           </div>
         </div>
       </div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl px-6">
         <p class="mt-1 text-m text-black text-left pb-4"><b>Werbebild f&uuml;r den "Survivor R" von Rheinmetall</b></p>
         <img class="w-full" src="resources/images/werbebild.webp" alt="Werbebild f&uuml;r den Survivor R von Rheinmetall">
         <div class="px-4 py-1">
@@ -474,7 +451,7 @@
     </div>
     <div class="bg-white py-20">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="py-20">
+        <div class="pt-10 pb-20">
           <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 text-center">Waffenstationen?!</p>
           <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-900">
           Das Bundesinnenministerium wird die Sonderwagen 5 mit Waffenstationen
@@ -498,11 +475,12 @@
           R&uuml;stungskonzern technisch f&uuml;r die Wartung abh&auml;ngig macht, sondern
           vorallem: Weil man weder mit Kriegswaffen auf die eigene Bev&ouml;lkerung
           zielt noch schießt.</p>
+          
         </div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <p class="mt-1 text-m text-black text-left pb-4"><b>"Field Ranger" von Rheinmetall</b></p>
           <img class="w-full" src="resources/images/fieldranger.webp" alt="Screenshot aus Werbevideo &uuml;ber den Field Ranger von Rheinmetall">
-          <div class="px-4 py-1 mb-20">
+          <div class="px-4 py-1">
             <p class="mt-1 text-m text-gray-500 text-right text-xs">Quelle:
             <a class="underline decoration-dotted" href="http://web.archive.org/web/20230928035527/https://www.rheinmetall.com/en/products/weapon-stations/weapon-stations#anchor-fieldranger" target="_blank">Rheinmetall Defence</a>
             </p>
@@ -511,99 +489,97 @@
       </div>
     </div>
 
-    <div class="pt-20 bg-gray-200 pb-20 px-10">
-      <p class="mt-2 text-2xl font-bold tracking-tight text-center"><a href="#wastun" name="wastun" class="text-gray-500 font-normal">#</a> Was tun?</p>
-      <p class="mx-auto mt-6 max-w-2xl text-2xl leading-8 text-gray-900">
-      Bringt Euch ein in den Diskurs. Werdet laut gegen die Militarisierung der
-      Polizei. Solche Panzer k&ouml;nnen nicht nur in den falschen H&auml;nden schwere
-      Sch&auml;den anrichten.
-      </p>
-      <p class="mx-auto mt-6 max-w-2xl text-xl leading-8 text-gray-900">
-      Und meldet Euch gerne
-      <a href="mailto:kontakt@polizeipanzer.info" class="text-blue-600 underline">via Mail bei polizeipanzer.info</a>
-      mit Hinweisen! Ansonsten k&ouml;nnt ihr Lennart M&uuml;hlenmeier auch
-      <a href="https://signal.me/#eu/J3XzYmDp_MpXqVVL_IPvYpTQJKup7d_KE4H6ZCuXhEXqP-LMdnxECb_lNULw5iDa" class="text-blue-600 underline">&uuml;ber den Messenger Signal</a>
-      schreiben, um Quellenschutz eher gew&auml;hrleisten zu k&ouml;nnen.
-      </p>
-      </p>
+   <div class="bg-black py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="pt-10 pb-20">
+          <p class="mt-2 text-2xl font-bold tracking-tight text-white text-center">"Gerücht"???</p>
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white">
+          <b>polizeipanzer.info</b> hat das Bundesinnenministerium und Rheinmetall mit seinen Erkenntnissen konfrontiert.
+          So könnte man zwar das belastende Material veröffentlichen, das die obigen Aussagen belegt.
+          Aber dann würden Menschen ihre Anstellungsverhälltnisse verlieren – oder schlimmer.</p>
+
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white">
+          So haben die Fragen an das Bundesinnenministerium in der "Bitte um Stellungnahme" vom 19. April 2024 gelautet:
+            <ol class="list-decimal text-white max-w-2xl mx-auto py-5">
+              <li>Planen Sie, die Sonderwagen 5 mit Waffenstationen auszustatten?</li>
+              <li>Sollen die zehn Bundesanschaffungen bereits vorhandene FLW 100 des Herstellers Krauss-Maffei Wegmann verbaut bekommen?</li>
+              <li>Wie ich erfuhr, soll Rheinmetall auch die Waffenstationen für die Länderanschaffungen des Sonderwagen 5 liefern. So soll es das Produkt "Field Ranger" werden. Können Sie dies bestätigen?</li>
+              <li>Wenn ja, wie fortgeschritten sind diese Verhandlungen?</li>
+              <li>Wie zufrieden sind Sie bei der Zusammenarbeit mit Rheinmetall als Ausstatter der Polizei?</li>
+            <ol>
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white">
+          Eine Sprecherin, die nicht genannt werden möchte, hat fristgerecht
+          und knapp geantwort. Zu den Fragen 1-4: "Das Führungs- und
+          Einsatzmittel Sonderwagen (SW) 5 ist als Verschlusssache eingestuft.
+          Wir bitten um Ihr Verständnis, dass weitere Detailauskünfte nicht
+          erteilt werden können." Wegen Frage 5 "bitte ich Sie gegebenenfalls
+          [&hellip;] die Bundespolizei bzw. die Polizeien der Länder" zu
+          nerven, da <a class="underline"
+          href="https://web.archive.org/web/20240108082128/https://www.gesetze-im-internet.de/bgsg_1994/BJNR297900994.html">
+        das ja untergeordnete Behörden sind</a>. </p>
+
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white">
+          Der stellvertretende Pressesprecher von Rheinmetall hatte innerhalb von 15 Minuten geantwortet: "Derzeit erreichen uns viele Anfragen, weshalb es bei der Beantwortung
+leider zu Verzögerungen kommen kann." Bis Ende der gesetzten Frist kamen keine Antworten auf die Anfrage an. Schade.
+          </p>
+
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white">
+          Die Fragen an den weltweit agierenden Rüstungskonzern mit "IT Solutions"-Tochterfirma vom 19. April 2024 haben gelautet:
+            <ol class="list-decimal text-white max-w-2xl mx-auto py-5">
+              <li>Wie lange und intensiv hält die optionale Ausstattung "CBRN-Schutzbelüftungsanlage" des Survivor R atomare, biologische und chemische Kampfstoffe ab? Ist die Anlage tatsächlich auf diesen Abwehrmodus optimiert?
+              <li>Zu welchem Stichtag sollen Sie die 55 Sonderwagen 5 für Bund und Länder ausliefern? Sind Sie diesbezüglich im Zeitplan oder gibt es Hindernisse?
+              <li>Wie ich erfuhr, soll Ihr Unternehmen auch die Waffenstationen für die Länderanschaffungen des Sonderwagen 5 liefern. So soll es das Produkt "Field Ranger" werden. Können Sie dies bestätigen?
+              <li>Wieviel kostet der "Field Ranger" im Durchschnitt für den Endkunden?
+              <li>Welche Märkte bedienen Sie am meisten mit dem Produkt "Field Ranger"?
+              <li>In welchen Umgebungen und zu welchen Bedingungen haben Sie den "Field Ranger" bisher getestet?
+              <li>War Ihr Unternehmen auf dem Europäischen Polizeikongress 2024 in Berlin vertreten? Wenn nein, warum nicht?
+            </ol>
+          </p>
+
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white">
+          Ein solches Verhalten gegenüber der <a href="https://web.archive.org/web/20240000000000*/https://www.gesetze-im-internet.de/gg/art_5.html" class="underline">gesetzlich garantierten</a> freien Presse kann zu Misstrauen in der Bevölkerung führen. Es könnte die Sicherheit der Bundesrepublik Deutschland bedrohen. Es dürfte illegal sein.</p>
+
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white -rotate-3 text-xl">
+          Kann das gewollt sein?
+          </p>
+
+          <p class="mx-auto mt-6 max-w-2xl text-2xl leading-8 text-white rotate-6 text-right">
+          Das lassen wir jetzt gerichtlich überprüfen!
+          </p>
+
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white pt-10">
+        Lennart wird erneut Klage gegen das Bundesinnenministerum einreichen.
+        Diesmal im Eilverfahren und nach Presserecht. Abermals am VG Berlin.
+        Ggfs. eine Instanz höher. Mal sehen, wer gewinnt.</p>
+
     </div>
-
-    <div class="pt-20 bg-white pb-20 px-10">
-      <p class="mt-2 text-2xl font-bold tracking-tight text-center"><a href="#promo" name="promo" class="text-gray-500 font-normal">#</a> Oder&hellip; teilt das Promo-Material!</p>
-      <p class="mx-auto mt-10 max-w-2xl text-xl leading-8 text-gray-900">
-      Zur Inspiration gibt es <b>vorgefertigte Texte</b> für Social Media. Kopiert die Texte einfach in das Netzwerk Eurer Wahl oder wandelt sie ab.
-      </p>
-      <form>
-      <p class="mx-auto mt-10 max-w-2xl text-2xl leading-8 text-gray-900">
-         <label for="1mai" class="block mb-2 font-medium text-gray-600">A. "1. Mai!"</label>
-         <textarea id="1mai" rows="3" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 text-base" readonly>Heraus zum 1. Mai! Zumindest mit dem arkanen Wissen und den Dokumenten über die #Polizeipanzer. Informiert Euch jetzt auf https://polizeipanzer.info</textarea>
-      </p>
-      <p class="mx-auto mt-10 max-w-2xl text-2xl leading-8 text-gray-900">
-         <label for="geheimhaltung" class="block mb-2 font-medium text-gray-600">B. "Geheimhaltung"</label>
-         <textarea id="geheimhaltung" rows="3" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 text-base" readonly>Eine Verschlusssache über #Polizeipanzer nur für den Dienstgebrauch? Das ist doch peinlich vom #BMI. Informiert Euch jetzt auf https://polizeipanzer.info</textarea>
-      </p>
-      <p class="mx-auto mt-10 max-w-2xl text-2xl leading-8 text-gray-900">
-         <label for="militarisierung" class="block mb-2 font-medium text-gray-600">C. "Militarisierung"</label>
-         <textarea id="militarisierung" rows="3" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 text-base" readonly>Auf die neuen #Polizeipanzer sollen Waffenstationen kommen, die millimetergenau töten könnten? Informiert Euch jetzt auf https://polizeipanzer.info</textarea>
-      </p>
-      </form>
-
-    <p class="mx-auto mt-10 max-w-2xl text-xl leading-8 text-gray-900 pt-10">
-    Wenn nichts mehr hilft, gibt es <b>ein Video</b>, das sich über Verbreitung freut. Ihr könnt es direkt anschauen und herunterladen.
-    </p>
-      <p class="mx-auto mt-2 max-w-xl text-xl text-center pt-5">
-        <a class="text-blue-600 underlined" href="resources/promo/2024-reel-polizeipanzerinfo.mp4">Herunterladen</a> <!-- FIXME downloadable nginx -->
-      </p>
-      <p class="mx-auto mt-3 max-w-xl text-base leading-8 text-gray-500 text-center">
-        Länge: 19 Sekunden, Größe: 37MB, Dateiformat: MP4
-      </p>
-
-      <p class="mx-auto mt-3 max-w-xl pt-5">
-        <video width="600" height="934" class="m-auto" controls>
-          <source src="resources/promo/2024-reel-polizeipanzerinfo.mp4" type="video/mp4">
-        </video>
-      </p>
-
-    <p class="mx-auto mt-10 max-w-2xl text-xl leading-8 text-gray-900 pt-10 text-center">
-      <b>polizeipanzer.info</b> ist auf <a href="https://systemli.social/@polizeipanzer" class="text-blue-600 underlined">Mastodon</a> und <a href="https://www.instagram.com/polizeipanzer" class="text-blue-600 underlined">Instagram</a> zu finden.
-    </p>
-
-
-      </p>
-    </div>
-
-    <div class="bg-gradient-to-r from-red-800 via-red-600 to-red-700 pb-10">
-      <a name="spenden"></a>
-      <div class="mx-auto max-w-7xl py-20 px-6 flex items-center justify-between grid sm:grid-cols-2 grid-cols-1">
-        <p class="text-xl tracking-tight text-gray-900 py-10 text-white sm:w-11/12">
-        <a href="#spenden" name="spenden" class="text-gray-500 font-normal"></a>
-        <b>David hat auch gegen Goliath gewonnen&hellip;</b> nur, dass wir jetzt
-            im Kapitalismus und nicht Jahrhunderte vor Christus leben. Lennart
-            M&uuml;hlenmeier freut sich &uuml;ber Spenden, um seine Arbeit an
-            den Sonderwagen-Recherchen zu finanzieren: Dazu geh&ouml;hren
-            Kosten f&uuml;r Anw&auml;lt:innen, Geb&uuml;hren bei Anfragen nach
-            Informationsfreiheitsgesetz, Reiseauslagen, Schokolade &amp;
-            Kaffee. &Uuml;bersch&uuml;sse gehen
-            an Freund- und Kolleg:innen.
-       </p>
-
-        <div class="mt-8 flex lg:mt-0 text-right lg:flex-shrink-0">
-          <div class="inline-flex rounded-md shadow">
-            <a href="TODO" class="inline-flex items-center justify-center rounded-md border border-transparent bg-red-800 px-5 py-3 font-bold text-white hover:bg-red-900 text-3xl">Jetzt spenden! &#x1f495;</a>
-          </div>
-        </div>
-      </div>
-       <p class="text-base tracking-tight text-gray-900 text-red-300 max-w-3xl mx-auto pb-10 px-5">
-            <b>Achtung:</b> Eure "Spende" auf betterplace.me ist
-            steuerrechtlich eine Schenkung und nicht absetzbar. Sobald mehr als
-            10.000 EUR im Topf sein sollten, wird es einen (auch rückwirkenden)
-            Transparenzbericht geben. Danke! &#x1f48c; 
-       </p>
     </div>
 
 
+    <div class="pt-20 bg-red-700 pb-20 px-10">
+      <a href="#spenden" name="spenden"></a>
+      <p class="mx-auto mt-6 max-w-2xl text-2xl leading-8 text-white">
+      <b>Aber dafür braucht er Eure Hilfe!</b> Wenn ihr Bock habt,
+        diesen reformatorischen Ansatz zu unterstützen, könnt ihr ihm gerne
+        Euer Geld geben. Das Kostenrisiko beträgt aktuell 2.500 EUR. Bitte
+        beachtet, dass das steuerrechtlich Schenkungen sind. Überschüsse würden
+        an einen guten Zweck gehen.
+      </b>
 
-    <footer class="py-20 px-6 bg-white text-black max-w-7xl mx-auto">
+      </p>
+      <p class="mx-auto max-w-2xl pt-10 text-right">
+        <a href="https://www.betterplace.me/polizeipanzer" class="mx-auto text-xl text-red-700 bg-white hover:bg-black focus:ring-4 focus:ring-blue-300 rounded-lg px-5 py-2.5 focus:outline-none">Jetzt mithelfen! &#127801;</a>
+      </p>
+
+      <p class="mx-auto mt-6 max-w-2xl text-xl pt-10 leading-8 text-white">
+      Oder: Schickt mir Eure Moneros, danke! <span class="text-xs">44E9dm2BUrwJkEPvhStNkvNAqjyH8wcah4cosf4jpepjDdeSviNUFHceY968eGs4wXMxdnFPQ9ZEJgF7vUZLEm7DNExgYoR</span>
+      </p>
+    </div>
+    <div class="bg-blue-800 text-white pt-20 pr-5 pl-5">
+      <p class="mx-auto mt-10 mb-10 max-w-2xl text-xl text-center">
+      <b>polizeipanzer.info</b> ist auf <a href="https://systemli.social/@polizeipanzer" class="text-white underline">Mastodon</a> und <a href="https://www.instagram.com/polizeipanzer" class="text-white underline">Instagram</a> zu finden.
+      </p>
+    <footer class="py-20 px-6 max-w-7xl mx-auto">
       <p class="pb-10 pt-10 text-xl"><b>Besondere Dankesch&ouml;ns gelten </b>
       allen solidarischen, unz&auml;hligen Helfer:innen und Hinweisgeber:innen, die
       diese Infoseite erst erm&ouml;glicht haben. Leider k&ouml;nnen sie hier (auch aus
@@ -614,8 +590,13 @@
         setzt keine Cookies. <i>Die ladungsf&auml;hige Anschrift lautet </i>
         polizeipanzer.info, c/o Cultivation Space, Aufgang 4, Gottschedstraße
         4, 13357 Berlin, Deutschland, bzw.
-      <a href="mailto:kontakt@polizeipanzer.info" class="text-blue-600 underline">kontakt@polizeipanzer.info</a>.</p>
+      <a href="mailto:kontakt@polizeipanzer.info" class="text-white underline">kontakt@polizeipanzer.info</a>.</p>
     </footer>
+    </div>
+
+    <p class="text-center text-gray-800 pt-10">
+    lol
+    </p>
 
   </body>
 </html>
